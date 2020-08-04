@@ -109,15 +109,12 @@ console.log(random_test);
 
 if(click_counter == random_test){
 
-//window.location.href = 'https://www1.nyc.gov/site/nypd/about/about-nypd/about-nypd-landing.page';
-window.location.href = 'p2.html';
+window.location.href = 'p3.html';
 
 
 }
-if(click_counter != random_test && click_counter > 1){
-	window.location.href = 'p3.html';
-}
-if(click_counter == 0){
+
+if(click_counter == 0 || click_counter != random+test){
 location.reload();
 }
 };
