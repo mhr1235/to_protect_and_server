@@ -1,0 +1,135 @@
+
+
+<!--
+  
+        _   _  ___       _____       _____  ___    ___      
+/'\_/`\( ) ( )|  _`\    (  _  )     (___  )(  _`\ (  _`\    
+|     || |_| || (_) )   `\  ,/'         | || (_) )| ( (_)   
+| (_) ||  _  || ,  /     /'_`\/\     _  | ||  _ <'| |  _    
+| | | || | | || |\ \    | (_> ,<`   ( )_| || (_) )| (_( )   
+(_) (_)(_) (_)(_) (_)   `\___/\/'   `\___/'(____/'(____/'   
+                                                            
+                                                            
+   __     __      __     __                                 
+ /'__`\ /' _`\  /'__`\ /' _`\                               
+(_)  ) )| ( ) |(_)  ) )| ( ) |                              
+   /' / | | | |   /' / | | | |                              
+ /' /( )| (_) | /' /( )| (_) |                              
+(_____/'`\___/'(_____/'`\___/'                              
+                                                            
+                                                            
+
+                      
+!-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+
+
+<video playsinline muted loop id="myVideo">
+  <source src="media/videoplayback.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+<!-- <div class="content">
+ -->
+<!--   <iframe src="https://www.google.com" title="W3Schools Free Online Web Tutorials">
+</iframe> -->
+<!--   <h1>Heading</h1>
+  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button> -->
+<!-- </div>  -->
+
+<script>
+var vid = document.getElementById("myVideo");
+var starttime = Math.floor(Math.random() * 1130) + 1;
+
+
+vid.style.opacity="0";
+vid.onloadeddata = function() {
+  //alert("Browser has loaded the current frame");
+  vid.currentTime = starttime;
+  console.log(starttime);
+  //vid.load();
+}
+//vid.pause();
+vid.play();
+setTimeout(makeVisible,500);
+
+
+
+function makeVisible() {
+vid.style.opacity="1";
+}
+
+
+
+
+
+/*function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}*/
+
+setTimeout(function () {
+   window.location.href = "https://www1.nyc.gov/site/nypd/about/about-nypd/about-nypd-landing.page"; //will redirect to your blog page (an ex: blog.html)
+}, 5000); //will call the function after 2 secs.
+</script>
+
+</body>
+</html>
