@@ -114,7 +114,7 @@ window.location.href = 'p3.html';
 
 }
 
-if(click_counter == 0 || click_counter != random+test){
+if(click_counter == 0 || click_counter != random_test){
 location.reload();
 }
 };
