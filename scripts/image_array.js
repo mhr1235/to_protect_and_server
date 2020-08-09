@@ -104,14 +104,9 @@ function clicks(){
   document.getElementById('try_again').style.opacity="0";
   document.getElementById('verify').onclick = function() {
 
-random_test = Math.floor((Math.random() * 8)+ 1);
+random_test = Math.floor((Math.random() * 8)+ 2);
 console.log(random_test);
-	  
-if(click_counter == 0){
-   setTimeout(function () {
-   location.reload(); //will redirect to your blog page (an ex: blog.html)
-}, 1000);
-   }
+	 
 
 if(click_counter == random_test || click_counter == random_test+1 || click_counter == random_test-1 ){
 
