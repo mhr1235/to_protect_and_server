@@ -17,7 +17,7 @@ System:
 
 To_Protect_and_Server is currently in beta development and is coded as a standalone website with all of it’s necessary assets and dependencies packaged together.  To implement it on your site, you can clone and download the repository and make sure that the included index.html file is the first site loaded.  You can edit line 112 of the ‘image_array.js’ file to point to your website on successfully passing the captcha.  
 
-<img src="">
+<img src="images/readme.png">
 
 You can change the name of the index.html file if you prefer to edit your .htaaccess directory index. 
 
