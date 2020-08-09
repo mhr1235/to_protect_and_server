@@ -115,7 +115,10 @@ window.location.href = 'p3.html';
 }
 
 if(click_counter == 0 || click_counter != random_test){
-location.reload();
+document.getElementById('try_again').style.opacity="1";
+setTimeout(function () {
+   location.reload(); //will redirect to your blog page (an ex: blog.html)
+}, 1000);
 }
 };
 
