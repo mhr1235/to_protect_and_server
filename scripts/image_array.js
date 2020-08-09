@@ -106,6 +106,12 @@ function clicks(){
 
 random_test = Math.floor((Math.random() * 8)+ 1);
 console.log(random_test);
+	  
+if(click_counter == 0){
+   setTimeout(function () {
+   location.reload(); //will redirect to your blog page (an ex: blog.html)
+}, 1000);
+   }
 
 if(click_counter == random_test || click_counter == random_test+1 || click_counter == random_test-1 ){
 
@@ -113,6 +119,7 @@ window.location.href = 'p3.html';
 
 
 }
+
 else{
 document.getElementById('try_again').style.opacity="1";
 setTimeout(function () {
