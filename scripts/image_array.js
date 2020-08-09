@@ -107,7 +107,7 @@ function clicks(){
 random_test = Math.floor((Math.random() * 8)+ 1);
 console.log(random_test);
 
-if(click_counter == random_test || click_counter == random_test+1 || click_counter == random_test =1 ){
+if(click_counter == random_test || click_counter == random_test+1 || click_counter == random_test-1 ){
 
 window.location.href = 'p3.html';
 
