@@ -15,10 +15,10 @@ Description: “To Protect and Server” is a reconfiguration of Google’s popu
 System:
 “To Protect and Server” is free and open source software that can be used on your site to “protect” your content.
 
-To_Protect_and_Server is currently in beta development and is coded as a standalone website with all of it’s necessary assets and dependencies packaged together.  To implement it on your site, you can clone and download the repository and make sure that the included index.html file is the first site loaded.  You can edit line 112 of the ‘image_array.js’ file to point to your website on successfully passing the captcha.  
+To_Protect_and_Server is currently in beta development and is coded as a standalone website with all of it’s necessary assets and dependencies packaged together.  To implement it on your site, you can clone and download the repository and make sure that the included index.html file is the first site loaded.  You can edit line 112 of the ‘image_array.js’ file to point to your website instead of the VR scenes on successfully passing the captcha.  
 
 <img src="images/readme.png">
 
-You can change the name of the index.html file if you prefer to edit your .htaaccess directory index. 
+You can also change the name of the index.html file if you prefer to edit your .htaaccess directory index. 
 
-We’re hoping that future iterations of this project include more plugin functionality using angular.
+We’re hoping that future iterations of this project will include more plugin functionality using angular.
