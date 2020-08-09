@@ -101,8 +101,8 @@ function clicks(){
 
 	}
 }
-
-   document.getElementById('verify').onclick = function() {
+  document.getElementById('try_again').style.opacity="0";
+  document.getElementById('verify').onclick = function() {
 
 random_test = Math.floor((Math.random() * 8)+ 1);
 console.log(random_test);
