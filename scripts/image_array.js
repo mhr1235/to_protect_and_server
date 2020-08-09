@@ -20,7 +20,7 @@
 
 
 // don't use new Array(3), just use []
-var numImages = 21;
+var numImages = 30;
 
 var images = [];
 
